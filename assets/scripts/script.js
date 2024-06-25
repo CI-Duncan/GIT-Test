@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     let formElement = document.getElementById("myForm");
     formElement.addEventListener('submit', displayName);
@@ -10,3 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
         
     };
 });
+
+function pullReq() {
+    console.log("Hello, I'm creating a pull request");
+}
+
+pullReq();
+
