@@ -19,6 +19,7 @@ function pullReq() {
 pullReq();
 
 
+
 let numberDisplay = document.getElementById('numberDisplay');
 let number = 0;
 
@@ -39,3 +40,10 @@ function upOrDown(e) {
         numberDisplay.textContent = number;
     }
 }
+
+function myFunction(p1, p2) {
+    return p1 * p2;
+  }
+
+  
+
