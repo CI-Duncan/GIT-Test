@@ -18,3 +18,24 @@ function pullReq() {
 
 pullReq();
 
+
+let numberDisplay = document.getElementById('numberDisplay');
+let number = 0;
+
+document.addEventListener('keydown', upOrDown);
+
+function upOrDown(e) {
+    console.log(e.key);
+    const allowedKeys = ["ArrowUp", "ArrowDown"];
+    if (allowedKeys.includes(e.key)) {
+        e.preventDefault();                         //Note this line position
+        if (e.key === "ArrowUp") {
+            // Scrolling up
+            number++;
+        } else if (e.key === "ArrowDown") {
+            // Scrolling down
+            number--;
+        }
+        numberDisplay.textContent = number;
+    }
+}
